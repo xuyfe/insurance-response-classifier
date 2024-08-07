@@ -1,7 +1,9 @@
 # Automobile Insurance Response Classifier
-EDA and an Ensemble model comprised of XGBoost, CatBoost, LightBGM, and other algorithms to predict whether existing customers will respond positively to new insurance offers based on demographic data. Submission as part of Kaggle competition.
+EDA and an Ensemble model comprised of XGBoost, CatBoost, LightBGM, and other algorithms to predict whether customers will respond positively to new automobile insurance offers based on demographic, engagement, and risk-related data. Submission as part of Kaggle competition.
 
-Achieved 735th out of 2,425 participants (top 30%).
+Models were scored with ROC-AUC score, which measures how well a model is in classifying a binary outcome. A score of 0.5 indicates random guessing, and a score of 1 indicates perfect discrimination. 
+
+Our model scored 0.8817 in the training set, and 0.88 in the testing set, and ultimately achieved 735th out of 2,425 participants (top 30%).
 
 ## Dataset Characterisitcs
 The dataset used to train the Voting Classifier contained demographic data (like gender, age, and region of a customer) as well as other variables such as whether the customer had previously been insured. In total, there were over 11 million observations in the training dataset, and over 7 million observations for the testing dataset. A table schema is shown below.
@@ -23,7 +25,6 @@ In order to evaluate how effective the insurance offer was among groups, we focu
 ## Recommendations
 - Tailor marketing campaigns and sales strategies for the groups with older vehicles, between 30-50 years of age, who have not been insured before, and who have had vehicle damage in the past, as these groups had the highest positive response rates.
 - Investigate differences in the response to campaigns and insurance offers by gender, as it seems both men and women with the same demographics respond similarly, but a higher proportion of men respond positively to the offers for each group.
-
 
  ## Dashboard
 The Tableau Public Dashboard can be found [here.](https://public.tableau.com/views/insurance_cross_selling/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
